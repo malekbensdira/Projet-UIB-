@@ -1,0 +1,121 @@
+/* Styles de base pour la page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Titre centré avec animation */
+#page-title {
+    text-align: center;
+    color: #ff0000; /* Couleur rouge pour le titre */
+    font-size: 2.5em;
+    margin-top: 20px;
+    animation: fadeInZoom 2s ease-out;
+}
+
+/* Logo en haut à gauche avec animation d'entrée */
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 180px !important; /* Forcer la largeur du logo */
+    height: auto !important; /* Maintenir les proportions */
+    animation: slideInLeft 3s ease-out;
+}
+
+/* Icône PDF en haut à droite */
+#pdf-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 100px !important; /* Forcer la largeur de l'icône PDF */
+    height: auto !important; /* Maintenir les proportions */
+    cursor: pointer;
+    z-index: 1000; /* Assurez-vous que l'icône reste au-dessus des autres éléments */
+}
+
+
+/* Cadre pour le tableau extrait */
+.result-container {
+    margin: 0 auto; /* Centrer le conteneur */
+    margin-top: 150px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 80%; /* Ajuster la largeur selon les besoins */
+    max-width: 800px; /* Largeur maximale pour éviter trop de largeur */
+    animation: fadeIn 3s ease-out;
+}
+
+/* Titre centré au-dessus du tableau */
+.section-title {
+    text-align: center;
+    color: #000000; /* Couleur noire */
+    font-family: Arial, sans-serif; /* Police commune */
+    font-size: 1.5em; /* Taille du texte du titre du tableau */
+    font-weight: bold; /* Met le texte en gras */
+    margin-bottom: 20px; /* Marge pour espacer du tableau */
+}
+
+/* Tableau avec bord et style amélioré */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff; /* Fond blanc pour le tableau */
+}
+
+th, td {
+    border: 1px solid #ffffffae;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f0f0f0;
+    color: #ff0000; /* Couleur des noms des colonnes en rouge */
+}
+
+/* Camembert */
+.chart-container {
+    width: 100%; /* Ajuster la largeur pour s'adapter au conteneur */
+    height: auto; /* Ajuster la hauteur pour le camembert */
+    margin-top: 20px; /* Espacer du tableau */
+    text-align: center; /* Centrer le texte du titre */
+    position: relative; /* Positionner le titre du camembert */
+}
+
+/* Titre du camembert */
+.chart-title {
+    font-size: 1.5em; /* Taille du texte du titre du camembert */
+    color: #000000; /* Couleur noire */
+    font-family: Arial, sans-serif; /* Police commune */
+    font-weight: bold; /* Met le texte en gras */
+    margin-bottom: 10px; /* Marge pour espacer du camembert */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInZoom {
+    from { opacity: 0; transform: scale(0.5); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+/* Cadre pour le camembert */
+.pie-chart-container {
+    width: 50%; /* Ajustez la largeur à 50% de son conteneur parent */
+    height: auto; /* Hauteur automatique pour le camembert */
+    margin: 0 auto; /* Centrer horizontalement */
+}
+

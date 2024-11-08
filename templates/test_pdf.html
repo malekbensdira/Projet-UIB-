@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test PDF</title>
+    <script src="https://unpkg.com/html2pdf.js@0.9.2/dist/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <h1>Bonjour le monde</h1>
+    <button onclick="generatePDF()">Générer PDF</button>
+    
+    <script>
+        function generatePDF() {
+            const element = document.body;
+            // Vérifiez si html2pdf est défini avant de l'utiliser
+            if (typeof html2pdf === 'undefined') {
+                console.error('html2pdf is not defined');
+                return;
+            }
+            html2pdf().from(element).save('test.pdf');
+        }
+    </script>
+    <script src="html2pdf.bundle.min.js"></script>
+</body>
+</html>

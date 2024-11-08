@@ -1,0 +1,51 @@
+1. Introduction
+Objectif du Projet : Développer une application web permettant de télécharger des images de bilans financiers, d'extraire le texte à partir de ces images, et de visualiser les données sous forme de graphiques interactifs et de tableaux.
+
+
+
+2. Technologies Utilisées
+Dash : Framework Python pour créer des applications web interactives.
+Plotly : Librairie pour les graphiques interactifs.
+Pandas : Librairie pour la manipulation de données.
+Pillow (PIL) : Librairie pour la gestion des images.
+Tesseract : Outil OCR pour l'extraction de texte à partir d'images.
+
+
+
+3. Description du Fonctionnement
+
+Chargement des Images : Utilisation de fichiers image pour le logo et le fond de l'application.
+
+Téléchargement de l'Image : Interface utilisateur pour télécharger une image contenant un bilan financier.
+
+Extraction du Texte : Utilisation de Tesseract pour convertir le texte des images en données exploitables.
+
+Traitement des Données : Transformation du texte extrait en DataFrame avec Pandas.
+
+Visualisation des Données : Création de graphiques interactifs (histogrammes et graphiques circulaires) pour visualiser les données.
+
+
+
+
+4. Fonctionnalités
+
+Affichage du Logo et du Fond : Intégration du logo et du fond à l'interface utilisateur.
+Interface de Téléchargement : Zone de téléchargement pour l'image du bilan financier.
+Visualisation : Affichage de graphiques et tableaux basés sur les données extraites.
+
+
+
+
+5. Défis Rencontrés
+Extraction de Texte : Problèmes liés à la qualité du texte extrait des images.
+Gestion des Erreurs : Traitement des erreurs lorsqu'aucun texte n'est extrait ou lorsque les données sont insuffisantes.
+
+
+6. Conclusion
+Bilan du Projet : Résumé des réalisations, des objectifs atteints et des perspectives d'amélioration.
+
+
+
+7. Annexes
+Code Source : Présentation des principaux extraits de code utilisés dans l'application.
+Captures d'Écran : Illustrations de l'interface utilisateur et des résultats de l'application.
